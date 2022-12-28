@@ -25,7 +25,7 @@ def simplify_text(text):
     message = completions.choices[0].text
     return message.strip()
 
-# change image and make sure the image are clear  
+# change the image and make sure the image are clear  
 # load image
 img = Image.open('img.png')
 
