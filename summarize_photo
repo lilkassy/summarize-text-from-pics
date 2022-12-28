@@ -2,8 +2,6 @@ import openai
 import configparser
 import pytesseract 
 from PIL import Image, ImageEnhance
-import speech_recognition as sr 
-import moviepy.editor as mp
 
 # put your openAI api key on a config.ini file or comment this part and paste the api directly on 
 # read the Api
@@ -43,7 +41,6 @@ img_edit = enhancer2.enhance(1.5)
 text = pytesseract.image_to_string(img)
 
 
-print(text)
 simplified_text = simplify_text(text)
 print(simplified_text)
 
