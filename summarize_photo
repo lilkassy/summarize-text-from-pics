@@ -5,11 +5,12 @@ from PIL import Image, ImageEnhance
 import speech_recognition as sr 
 import moviepy.editor as mp
 
+# put your openAI api key on a config.ini file or comment this part and paste the api directly on 
 # read the Api
 config = configparser.ConfigParser()
 config.read("config.ini")
 
-# put your openai api key on a config.ini file
+# put your openai api key on a config.ini file or remove the config["api"]["key"] and past "API KEY" directly
 # set the API key
 openai.api_key = config["api"]["key"]
 
